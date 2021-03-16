@@ -16,23 +16,21 @@ public class FactoresPrimos {
     }
 
     public long calcularMCD(long a, long b) {
-        if(a < 0 || b < 0) return -1;
-        if(a == 0) return b;
-        if (b == 0) return a;
+        if(a <= 0 || b <= 0) return -1;
         long[] firstDescomposition = calcularDescomposicion(a);
         long[] secondDescomposition = calcularDescomposicion(b);
 
         long resultMCD = 1;
 
         for(int i = 0; i < firstDescomposition.length; i+=2)
-            for (int j = 0; j < secondDescomposition.length; j+=2)
-                if (firstDescomposition[i] == secondDescomposition[j]) {
-                    if (firstDescomposition[i + 1] < secondDescomposition[j + 1])
-                        resultMCD *= Math.pow(firstDescomposition[i], firstDescomposition[i + 1]);
-                    else
-                        resultMCD *= Math.pow(secondDescomposition[j], secondDescomposition[j + 1]);
-                break;
-                }
+        for (int j = 0; j < secondDescomposition.length; j+=2)
+        if (firstDescomposition[i] == secondDescomposition[j]) {
+        if (firstDescomposition[i + 1] < secondDescomposition[j + 1])
+        resultMCD *= Math.pow(firstDescomposition[i], firstDescomposition[i + 1]);
+        else
+        resultMCD *= Math.pow(secondDescomposition[j], secondDescomposition[j + 1]);
+        break;
+        }
 
         return resultMCD;
     }
@@ -41,6 +39,7 @@ public class FactoresPrimos {
         // Dados dos enteros estrictamente positivos, devuelve
         // su Mínimo Común Múltiplo
         // Todavía sin implementar...
+
         return 0;
     }
 }

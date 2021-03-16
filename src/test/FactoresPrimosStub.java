@@ -5,16 +5,12 @@ import main.lab1.FactoresPrimos;
 public class FactoresPrimosStub extends FactoresPrimos {
     public long[] firstDescomposition;
     public long[] secondDescomposition;
-    private int count = 0;
+    public long firstNumber;
+    public long secondNumber;
 
     @Override
     public long[] calcularDescomposicion(long n){
-        long[] descomposition;
-        if(count % 2 == 0)
-            descomposition = firstDescomposition;
-        else
-            descomposition = secondDescomposition;
-        count++;
-        return descomposition;
+        if (n == firstNumber) return firstDescomposition;
+        return secondDescomposition;
     }
 }
