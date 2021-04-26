@@ -1,0 +1,5 @@
+David false A 2000
+Juan true A 1900
+Pedro true B 2100
+Carlos true C 1800
+Jose false B 1900

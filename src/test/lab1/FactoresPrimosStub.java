@@ -1,4 +1,4 @@
-package test;
+package test.lab1;
 
 import main.lab1.FactoresPrimos;
 

@@ -1,12 +1,12 @@
-package test;
+package test.lab1;
 
 import static org.junit.Assert.assertEquals;
 
-import main.lab1.FactoresPrimos;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+import test.lab1.FactoresPrimosStub;
 
 import java.util.Arrays;
 import java.util.Collection;

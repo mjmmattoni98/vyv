@@ -1,0 +1,4 @@
+Gil false A 2000
+Pacheco false B 2200
+Dolz false A 2500
+Molina true C 1500
